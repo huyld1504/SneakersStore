@@ -6,36 +6,139 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+    <!-- Link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Link animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Montserrat:ital,wght@0,400;1,300;1,400&family=Roboto:ital,wght@0,300;1,300&family=Tilt+Prism&display=swap"
+        rel="stylesheet">
+
     <!-- FontAwesome 6.4.0 CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- link SCSS custom -->
-    <link rel="stylesheet" href="/custom/css/register.min.css">
+    <link rel="stylesheet" href="/css/register.min.css">
 
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 </head>
 
 <body>
     <header class="register_header">
         <div class="container">
-            <a href="#" class="logo">
-                <i class="fa-solid fa-heart-circle-exclamation"></i>
+            <a href="#" class="logo ">
+                <i
+                    class="fa-solid fa-dragon animate__animated animate__fadeInLeft animate__slower animate__infinite"></i>
+                <span class="logo_title ">Sneaker</span>
             </a>
-            <nav class="menu">
-                <a href="">
+            <div class="menu">
+                <a href="#" class="mx-5">Shop</a>
+                <a href="#" class="mx-5">Menu</a>
+                <a href="#" class="mx-5 shop animate__animated animate__tada animate__slower animate__infinite">
                     <i class="fa fa-shopping-cart"></i>
                 </a>
-                <a href="">Shop</a>
-                <a href="">Register</a>
-            </nav>
+            </div>
         </div>
     </header>
-    <section class="register_menu"></section>
-    <section class="register_form"></section>
+    <section class="register_menu">
+        <div class="container">
+            <a href="./index.html"
+                class="animate__animated animate__heartBeat animate__slower animate__infinite home">Home</a>
+            <a href="" class="mx-2">Man</a>
+            <a href="" class="mx-2">Woman</a>
+            <a href="" class="mx-2">Kid</a>
+            <a href="" class="mx-2">Sport</a>
+        </div>
+    </section>
+    <section class="register_form">
+        <h1 class="text-center mt-3">Register</h1>
+        <div class="container mt-5">
+
+            <form class="frm_register">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="mb-4">
+                            <label for="exampleInputEmail1" class="form-label fs-4 pt-4 text_effect">Email
+                                address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                        </div>
+                        <div class="mb-4">
+                            <label for="exampleInputPassword1" class="form-label fs-4 text_effect">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-4">
+                            <label for="exampleInputPassword1" class="form-label fs-4 text_effect">Confirm
+                                password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <!-- <div class="mb-4 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label fs-4" for="exampleCheck1">Check me out</label>
+                        </div> -->
+                    </div>
+                    <div class="col-6">
+                        <div class="mb-4">
+                            <label for="exampleInputEmail1" class="form-label fs-4 pt-4 text_effect">Name</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                        </div>
+                        <div class="mb-4">
+                            <label for="exampleInputPassword1" class="form-label fs-4 text_effect">Phone Number</label>
+                            <input type="number" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-4">
+                            <label for="exampleInputPassword1" class="form-label fs-4 text_effect">Gender</label>
+                            <br><br>
+                            <input type="radio" id="male" name="exampleGender" value="male">
+                            <label for="male" name="sex" value="male" class="fs-3">Male</label>
+                            <input type="radio" id="female" name="exampleGender" value="female">
+                            <label for="female" name="sex" value="female" class="fs-3 mx-5">Female</label>
+                        </div>
+                        <!-- <div class="mb-4 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                          </div> -->
+                    </div>
+                </div>
+                
+            </form>
+
+        </div>
+
+        </div>
+
+    </section>
     <footer class="register_footer"></footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./controller/register.js"></script>
 </body>
 
 </html>

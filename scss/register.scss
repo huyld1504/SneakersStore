@@ -1,0 +1,172 @@
+//@use '../scss/method';
+
+//Bảng màu regiter.html
+
+//Background:
+$bg-0: black;
+$bg-1: white;
+$bg-3: rgb(201, 201, 201);
+$bg-4: rgb(225, 47, 225);
+
+//Color:
+$txt-1: black;
+$txt-2: rgb(201,201,201);
+$txt-3: red;
+$txt-4: rgb(13, 225, 20);
+$txt-5: whitesmoke;
+$txt-6: rgb(225,47,225);
+
+//Font size:
+$fs-1: 10px;
+$fs-2: 20px;
+$fs-3: 30px;
+$fs-4: 40px;
+$fs-5: 50px;
+$fs-6: 60px;
+$fs-7: 70px;
+
+//Font weight:
+$fw-1: 100;
+$fw-2: 200;
+$fw-3: 300;
+$fw-4: 400;
+$fw-5: 500;
+$fw-6: 600;
+$fw-7: 700;
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//Header 
+body{
+    height: 1000px;
+}
+.register_header{
+    background-color: $bg-0;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            color: $txt-6;
+            font-size: $fs-5;
+            //margin-left: -300px;
+            display: inline-block;
+            text-decoration: none;
+            font-family: 'Tilt Prism';
+        }
+        .menu{
+            //margin-left: 200px;
+            .shop{
+                color: $txt-2;
+                font-size: $fs-4;
+            }
+            a{
+                position: relative;
+                display: inline-block;
+                color: $txt-5;
+                text-decoration: none;
+                //margin-left: 100px;
+                font-size: $fs-2;
+                &::after{
+                    position: absolute;
+                    width: 0%;
+                    height: 2px;
+                    content: '';
+                    bottom: -3px;
+                    left: 0;
+                    background-color: $bg-4;
+                    transform: scale(0);
+                }
+                &:hover{
+                    color: $txt-6;
+                    transition: all 0.5s;
+                    &::after{
+                        width: 100%;
+                        transform: scaleX(1);
+                        transition: 0.5s transform;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Menu 
+.register_menu{
+    background-color: $bg-3;
+    .container{
+        margin-left: 30px;
+        .home{
+            color: $txt-6;
+            font-weight: $fw-5;
+        }
+        a{
+            display: inline-block;
+            text-decoration: none;
+            font-size: $fs-2;
+            color: $txt-1;
+            padding: 0px 20px;
+            margin: 10px 0px;
+            &:hover{
+                color: $txt-6;
+                transition: all 0.5s linear;
+            }
+        }
+    }
+}
+
+//Register Form
+.register_form{
+    .container {
+        border: 1px solid red;
+        height: 450px;
+        width: 100% !important;
+        .frm_register{
+            .row{
+                .col-6{
+                    .mb-4{
+                        input{
+                            font-size: $fs-3;
+                            color: $txt-2;
+                        }
+                        .text_effect{
+                            position: relative;
+                            font-family: sans-serif;
+                            text-transform: uppercase;
+                            font-size: $fs-3;
+                            letter-spacing: 4px;
+                            overflow: hidden;
+                            background: linear-gradient(60deg, $bg-4, $bg-1, $bg-4);
+                            background-repeat: no-repeat;
+                            background-size: 80%;
+                            animation: animate 3s linear infinite;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: rgba(255, 255, 255, 0);
+                            animation: text_effect linear infinite 5s;
+                        }
+                        .form-check{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Animation 
+//1. Animate effect text
+@keyframes text_effect {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
