@@ -1,0 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.register_header {
+  background-color: black;
+}
+.register_header .container .logo a i {
+  color: red;
+}
