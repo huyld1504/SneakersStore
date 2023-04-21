@@ -67,59 +67,45 @@
         </div>
     </section>
     <section class="register_form">
-        <h1 class="text-center mt-3">Register</h1>
+        <h1 class="text-center mt-3 text-danger" style="font-size: 70px;">Register</h1>
         <div class="container mt-5">
 
-            <form class="frm_register">
+            <form class="frm_register form-control">
                 <div class="row">
                     <div class="col-6">
                         <div class="mb-4">
-                            <label for="exampleInputEmail1" class="form-label fs-4 pt-4 text_effect">Email
-                                address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
-                            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                            <label  class="form-label fs-4 pt-4 text_effect">gmail address</label>
+
                         </div>
                         <div class="mb-4">
-                            <label for="exampleInputPassword1" class="form-label fs-4 text_effect">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <label  class="form-label fs-4 text_effect">Password</label>
+                            
                         </div>
                         <div class="mb-4">
-                            <label for="exampleInputPassword1" class="form-label fs-4 text_effect">Confirm
-                                password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <label  class="form-label fs-4 text_effect">Confirm password</label>
+                            
                         </div>
-                        <!-- <div class="mb-4 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label fs-4" for="exampleCheck1">Check me out</label>
-                        </div> -->
                     </div>
                     <div class="col-6">
                         <div class="mb-4">
-                            <label for="exampleInputEmail1" class="form-label fs-4 pt-4 text_effect">Name</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
-                            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                            <label  class="form-label fs-4 pt-4 text_effect">Name</label>
+                           
                         </div>
                         <div class="mb-4">
-                            <label for="exampleInputPassword1" class="form-label fs-4 text_effect">Phone Number</label>
-                            <input type="number" class="form-control" id="exampleInputPassword1">
+                            <label  class="form-label fs-4 text_effect">Phone Number</label>
+                            
                         </div>
                         <div class="mb-4">
-                            <label for="exampleInputPassword1" class="form-label fs-4 text_effect">Gender</label>
+                            <label  class="form-label fs-4 text_effect">Gender</label>
                             <br><br>
                             <input type="radio" id="male" name="exampleGender" value="male">
-                            <label for="male" name="sex" value="male" class="fs-3">Male</label>
+                            <label for="male" name="sex" value="male" class="fs-3 gender">Male</label>
                             <input type="radio" id="female" name="exampleGender" value="female">
-                            <label for="female" name="sex" value="female" class="fs-3 mx-5">Female</label>
+                            <label for="female" name="sex" value="female" class="fs-3 mx-5 gender">Female</label>
                         </div>
-                        <!-- <div class="mb-4 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                          </div> -->
                     </div>
                 </div>
-                
+                <button type="submit" class="coolBeans mx-auto d-block">Sign in</button>
             </form>
 
         </div>
@@ -138,7 +124,7 @@
         integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="./controller/register.js"></script>
+    <script type="module" src="./controller/register.js"></script>
 </body>
 
 </html>

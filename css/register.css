@@ -64,6 +64,10 @@ body {
   color: rgb(225, 47, 225);
   font-weight: 500;
 }
+.register_menu .container .home:hover {
+  color: red;
+  transition: all 1s;
+}
 .register_menu .container a {
   display: inline-block;
   text-decoration: none;
@@ -77,14 +81,12 @@ body {
   transition: all 0.5s linear;
 }
 
-.register_form .container {
-  border: 1px solid red;
-  height: 450px;
-  width: 100% !important;
+.register_form {
+  background-color: white;
 }
 .register_form .container .frm_register .row .col-6 .mb-4 input {
   font-size: 30px;
-  color: rgb(201, 201, 201);
+  color: black;
 }
 .register_form .container .frm_register .row .col-6 .mb-4 .text_effect {
   position: relative;
@@ -93,14 +95,60 @@ body {
   font-size: 30px;
   letter-spacing: 4px;
   overflow: hidden;
-  background: linear-gradient(60deg, rgb(225, 47, 225), white, rgb(225, 47, 225));
+  background: linear-gradient(60deg, rgb(225, 47, 225), white, red);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 3s linear infinite;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  animation: text_effect linear infinite 5s;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.5);
+  animation: text_effect linear infinite 10s;
 }
+.register_form .container .frm_register .row .col-6 .mb-4 .gender:hover {
+  color: rgb(225, 47, 225);
+  transition: all 1s;
+}
+.register_form .coolBeans {
+  border: 2px solid currentColor;
+  border-radius: 30px;
+  width: 200px;
+  height: 80px;
+  color: red;
+  font-family: roboto;
+  font-size: 30px;
+  font-weight: 400;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+.register_form .coolBeans::after {
+  background-color: rgb(225, 47, 225);
+  border-radius: 0.5rem;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.3s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+.register_form .coolBeans:hover::after {
+  transform: translate(0, 0);
+}
+.register_form .coolBeans:hover {
+  border: 2px solid transparent;
+  color: whitesmoke;
+  transform: scale(1);
+  will-change: transform;
+}
+
 @keyframes text_effect {
   0% {
     background-position: -500%;

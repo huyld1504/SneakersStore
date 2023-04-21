@@ -7,6 +7,7 @@ $bg-0: black;
 $bg-1: white;
 $bg-3: rgb(201, 201, 201);
 $bg-4: rgb(225, 47, 225);
+$bg-5: red;
 
 //Color:
 $txt-1: black;
@@ -105,6 +106,10 @@ body{
         .home{
             color: $txt-6;
             font-weight: $fw-5;
+            &:hover{
+                color: $txt-3;
+                transition: all 1s;
+            }
         }
         a{
             display: inline-block;
@@ -123,17 +128,15 @@ body{
 
 //Register Form
 .register_form{
+    background-color: $bg-1;
     .container {
-        border: 1px solid red;
-        height: 450px;
-        width: 100% !important;
         .frm_register{
             .row{
                 .col-6{
                     .mb-4{
                         input{
                             font-size: $fs-3;
-                            color: $txt-2;
+                            color: $txt-1;
                         }
                         .text_effect{
                             position: relative;
@@ -142,23 +145,71 @@ body{
                             font-size: $fs-3;
                             letter-spacing: 4px;
                             overflow: hidden;
-                            background: linear-gradient(60deg, $bg-4, $bg-1, $bg-4);
+                            background: linear-gradient(60deg, $bg-4, $bg-1, $bg-5);
                             background-repeat: no-repeat;
                             background-size: 80%;
                             animation: animate 3s linear infinite;
                             -webkit-background-clip: text;
-                            -webkit-text-fill-color: rgba(255, 255, 255, 0);
-                            animation: text_effect linear infinite 5s;
+                            -webkit-text-fill-color: rgba(255, 255, 255, 0.5);
+                            animation: text_effect linear infinite 10s;
                         }
-                        .form-check{
-
+                        .gender{
+                            &:hover{
+                                color: $txt-6;
+                                transition: all 1s;
+                            }
                         }
                     }
                 }
             }
         }
     }
+    .coolBeans{
+        border :2px solid currentColor;
+        border-radius :30px;
+        width: 200px;
+        height: 80px;
+        color:$bg-5;
+        font-family :roboto;
+        font-size :$fs-3;
+        font-weight :$fw-4;
+        overflow :hidden;
+        position :relative;
+        text-decoration :none;
+        transition :.2s transform ease-in-out;
+        will-change :transform;
+        z-index :0;
+  
+        &::after{
+            background-color :$bg-4;
+            border-radius :0.5rem;
+            content: '';
+            display :block;
+            height :100%;
+            width :100%;
+            position :absolute;
+            left :0;
+            top :0;
+            transform :translate(-100%, 0) rotate(10deg);
+            transform-origin :top left;
+            transition :.3s transform ease-out;
+            will-change : transform;
+            z-index :-1;
+        }
+    
+        &:hover::after{
+                transform :translate(0, 0);
+        }
+        &:hover{
+            border :2px solid transparent;
+            color :$txt-5;
+            transform :scale(1);
+            will-change :transform;
+        }
+  
 }
+}
+
 
 //Animation 
 //1. Animate effect text
