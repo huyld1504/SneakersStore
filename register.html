@@ -74,38 +74,40 @@
                 <div class="row">
                     <div class="col-6">
                         <div class="mb-4">
-                            <label  class="form-label fs-4 pt-4 text_effect">gmail address</label>
-
+                            <label class="form-label fs-4 pt-4 text_effect">gmail address</label>
+                            <input type="email" class="input_register" id="email">
                         </div>
                         <div class="mb-4">
-                            <label  class="form-label fs-4 text_effect">Password</label>
-                            
+                            <label class="form-label fs-4 text_effect">Password</label>
+                            <input type="password" class="input_register" id="password">
                         </div>
                         <div class="mb-4">
-                            <label  class="form-label fs-4 text_effect">Confirm password</label>
-                            
+                            <label class="form-label fs-4 text_effect">Confirm password</label>
+                            <input type="password" class="input_register" id="">
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="mb-4">
-                            <label  class="form-label fs-4 pt-4 text_effect">Name</label>
-                           
+                            <label class="form-label fs-4 pt-4 text_effect">Name</label>
+                            <input type="text" class="input_register" id="name">
                         </div>
                         <div class="mb-4">
-                            <label  class="form-label fs-4 text_effect">Phone Number</label>
-                            
+                            <label class="form-label fs-4 text_effect">Phone Number</label>
+                            <input type="number" class="input_register" id="phone">
                         </div>
                         <div class="mb-4">
-                            <label  class="form-label fs-4 text_effect">Gender</label>
+                            <label class="form-label fs-4 text_effect">Gender</label>
                             <br><br>
-                            <input type="radio" id="male" name="exampleGender" value="male">
-                            <label for="male" name="sex" value="male" class="fs-3 gender">Male</label>
-                            <input type="radio" id="female" name="exampleGender" value="female">
-                            <label for="female" name="sex" value="female" class="fs-3 mx-5 gender">Female</label>
+                            <input type="radio" id="male" name="exampleGender" value="true">
+                            <label for="male" name="sex" value="true" class="fs-3 gender input_register"
+                             id="gender">Male</label>
+                            <input type="radio" id="female" name="exampleGender" value="false">
+                            <label for="female" name="sex" value="false" class="fs-3 mx-5 gender input_register"
+                             id="gender">Female</label>
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="coolBeans mx-auto d-block">Sign in</button>
+                <button type="submit" class="coolBeans mx-auto d-block">Submit</button>
             </form>
 
         </div>
@@ -115,15 +117,25 @@
     </section>
     <footer class="register_footer"></footer>
 
-
+    <!-- <style>
+        .row .col-6 .mb-4 .input_register {
+            color: blue !important;
+            background-color: blue !important;
+        }
+    </style> -->
+    <!-- link axios call API -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.6/axios.min.js"
+        integrity="sha512-06NZg89vaTNvnFgFTqi/dJKFadQ6FIglD6Yg1HHWAUtVFFoXli9BZL4q4EO1UTKpOfCfW5ws2Z6gw49Swsilsg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- link bootstrap  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
-
+    <!-- link font awesome  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
         integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <!-- link js custom -->
     <script type="module" src="./controller/register.js"></script>
 </body>
 

@@ -150,7 +150,7 @@ body{
                             background-size: 80%;
                             animation: animate 3s linear infinite;
                             -webkit-background-clip: text;
-                            -webkit-text-fill-color: rgba(255, 255, 255, 0.5);
+                            -webkit-text-fill-color: rgba(255, 255, 255, 0);
                             animation: text_effect linear infinite 10s;
                         }
                         .gender{
@@ -165,10 +165,10 @@ body{
         }
     }
     .coolBeans{
-        border :2px solid currentColor;
+        border :2px solid $bg-5;
         border-radius :30px;
         width: 200px;
-        height: 80px;
+        height: 60px;
         color:$bg-5;
         font-family :roboto;
         font-size :$fs-3;
@@ -179,7 +179,7 @@ body{
         transition :.2s transform ease-in-out;
         will-change :transform;
         z-index :0;
-  
+        background-color: $bg-1;
         &::after{
             background-color :$bg-4;
             border-radius :0.5rem;
@@ -196,7 +196,6 @@ body{
             will-change : transform;
             z-index :-1;
         }
-    
         &:hover::after{
                 transform :translate(0, 0);
         }
@@ -206,8 +205,7 @@ body{
             transform :scale(1);
             will-change :transform;
         }
-  
-}
+    }
 }
 
 
