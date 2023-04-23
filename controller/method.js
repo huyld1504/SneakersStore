@@ -1,9 +1,9 @@
 //Pick value from input radio 
 export let  getCheckedRadioValue = (radioGroupName) => {
     var rads = document.getElementsByName(radioGroupName)
-    for (let i = 0; i < rads.length; i++)
+    for (let i = 0; i < rads.length; i++) 
         if (rads[i].checked) //checked value from input type radio
-            return rads[i].value;
+            return rads[i].value = true;
     return null; // or undefined, or your preferred default for none checked
 }
 

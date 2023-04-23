@@ -84,6 +84,9 @@ body {
 .register_form {
   background-color: white;
 }
+.register_form .container .frm_register {
+  background-color: rgb(201, 201, 201);
+}
 .register_form .container .frm_register .row .col-6 .mb-4 input {
   font-size: 30px;
   color: black;

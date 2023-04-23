@@ -20,18 +20,22 @@ document.querySelector('.frm_register').onsubmit = (event) => {
 
     //Check validation from users
     var validation = true
-    validation = check_space(customer.email,'email') & check_space(customer.password,'password') & check_space(customer.confirmPassword,'confirmPassword') & check_space(customer.name,'name') & check_space(customer.phone,'phone') & check_space(customer.gender,'gender')
+    validation = check_space(customer.email,'email') & check_space(customer.password,'password') & check_space(customer.name,'name') & check_space(customer.phone,'phone') & check_space(customer.gender,'gender')
     if (!validation) {
         return
     }
 
-    // let promise = axios ({
-    //     url: ' https://shop.cyberlearn.vn/api/Users/signup',
-    //     method: 'POST',
-    //     responseType: 'JSON',
-    //     data: data
-    // })
-    // promise.then(function(res){
-
-    // })
+    let promise = axios ({
+        url: 'https://shop.cyberlearn.vn/api/Users/signup',
+        method: 'POST',
+        //responseType: 'JSON',
+        data: customer
+    })
+    promise.then(function(result){
+        console.log(result.data)
+    })
+    promise.catch(function (err){
+        console.log(err)
+    })    
+    //document.querySelector('.frm_register').reset()
 }
