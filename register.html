@@ -76,34 +76,38 @@
                         <div class="mb-4">
                             <label class="form-label fs-4 pt-4 text_effect">gmail address</label>
                             <input type="email" class="input_register" id="email">
+                            <span class="alert  check_empty_email text-danger"></span>
                         </div>
                         <div class="mb-4">
                             <label class="form-label fs-4 text_effect">Password</label>
                             <input type="password" class="input_register" id="password">
+                            <span class="alert  check_empty_password text-danger"></span>
                         </div>
                         <div class="mb-4">
                             <label class="form-label fs-4 text_effect">Confirm password</label>
-                            <input type="password" class="input_register" id="">
+                            <input type="password" class="input_register" id="confirm_Password">
+                            <span class="alert check_empty_confirmPassword text-danger"></span>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="mb-4">
                             <label class="form-label fs-4 pt-4 text_effect">Name</label>
                             <input type="text" class="input_register" id="name">
+                            <span class="alert  check_empty_name text-danger"></span>
                         </div>
                         <div class="mb-4">
                             <label class="form-label fs-4 text_effect">Phone Number</label>
                             <input type="number" class="input_register" id="phone">
+                            <span class="alert  check_empty_phone text-danger"></span>
                         </div>
                         <div class="mb-4">
                             <label class="form-label fs-4 text_effect">Gender</label>
                             <br><br>
-                            <input type="radio" id="male" name="exampleGender" value="true">
-                            <label for="male" name="sex" value="true" class="fs-3 gender input_register"
-                             id="gender">Male</label>
-                            <input type="radio" id="female" name="exampleGender" value="false">
-                            <label for="female" name="sex" value="false" class="fs-3 mx-5 gender input_register"
-                             id="gender">Female</label>
+                            <input type="radio" id="male" name="Gender" value="true" class="gender_male gender">
+                            <label for="male" name="Gender" class="fs-3">Male</label>
+                            <input type="radio" id="female" name="Gender" value="false" class="gender_female gender">
+                            <label for="female" name="Gender" class="fs-3 mx-5">Female</label>
+                            <span class="alert  check_empty_gender text-danger"></span>
                         </div>
                     </div>
                 </div>
