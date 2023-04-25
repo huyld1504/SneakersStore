@@ -9,7 +9,7 @@ export let  getCheckedRadioValue = (radioGroupName) => {
 
 //Function check validation from user 
 export let check_space = (value, name) => {
-    if (value.trim() === '') {
+    if (value.trim() == '') {
         document.querySelector(`.check_empty_${name}`).innerHTML = `Không được bỏ trống phần này (*)`
         return false
     } else {
