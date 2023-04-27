@@ -43,4 +43,3 @@ window.onload = function () {
     const myParams = urlParams.get('productid')
     console.log('params',myParams)
 }
-
