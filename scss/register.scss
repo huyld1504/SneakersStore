@@ -65,7 +65,7 @@ body{
             //margin-left: 200px;
             .shop{
                 color: $txt-2;
-                font-size: $fs-4;
+                font-size: $fs-3;
             }
             a{
                 position: relative;
@@ -129,12 +129,16 @@ body{
 //Register Form
 .register_form{
     background-color: $bg-1;
+    h1{
+        font-size: $fs-5;
+    }
     .container {
         .frm_register{
-            background-color: $bg-3;
-            .row{
-                .col-6{
-                    .mb-4{
+            background-color: $bg-1;
+            border: none;
+            .register__form{
+                .form__input{
+                    .component__input{
                         input{
                             font-size: $fs-3;
                             color: $txt-1;
@@ -209,8 +213,20 @@ body{
     }
 }
 
-//Footer 
-.register_footer{
+
+//Animation 
+//1. Animate effect text
+@keyframes text_effect {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
+  //Footer 
+  .register_footer{
     .container{
         .footer_register_info{
             .footer_register_title{
@@ -223,17 +239,5 @@ body{
                 font-size: $fs-2;
             }
         }
-    }
-  }
-
-
-//Animation 
-//1. Animate effect text
-@keyframes text_effect {
-    0% {
-      background-position: -500%;
-    }
-    100% {
-      background-position: 500%;
     }
   }
