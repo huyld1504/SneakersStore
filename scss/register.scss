@@ -65,7 +65,7 @@ body{
             //margin-left: 200px;
             .shop{
                 color: $txt-2;
-                font-size: $fs-3;
+                font-size: $fs-4;
             }
             a{
                 position: relative;
@@ -129,16 +129,12 @@ body{
 //Register Form
 .register_form{
     background-color: $bg-1;
-    h1{
-        font-size: $fs-5;
-    }
     .container {
         .frm_register{
-            background-color: $bg-1;
-            border: none;
-            .register__form{
-                .form__input{
-                    .component__input{
+            background-color: $bg-3;
+            .row{
+                .col-6{
+                    .mb-4{
                         input{
                             font-size: $fs-3;
                             color: $txt-1;
@@ -222,22 +218,5 @@ body{
     }
     100% {
       background-position: 500%;
-    }
-  }
-
-  //Footer 
-  .register_footer{
-    .container{
-        .footer_register_info{
-            .footer_register_title{
-                font-size: $fs-3;
-            }
-            p{
-                font-size: $fs-2;
-            }
-            .register_more_info{
-                font-size: $fs-2;
-            }
-        }
     }
   }
