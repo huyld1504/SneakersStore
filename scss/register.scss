@@ -209,6 +209,23 @@ body{
     }
 }
 
+//Footer 
+.register_footer{
+    .container{
+        .footer_register_info{
+            .footer_register_title{
+                font-size: $fs-3;
+            }
+            p{
+                font-size: $fs-2;
+            }
+            .register_more_info{
+                font-size: $fs-2;
+            }
+        }
+    }
+  }
+
 
 //Animation 
 //1. Animate effect text
