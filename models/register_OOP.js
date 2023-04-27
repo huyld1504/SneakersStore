@@ -1,8 +1,9 @@
-//Class sign in of user
-export function CustomerInformation() {
-    this.email = '',
-    this.password = '',
-    this.name = '',
-    this.gender = true,
-    this.phone = ''
+//Class sign in of user (save user's info)
+export class CustomerInfo {
+    email = ''
+    password = ''
+    name = ''
+    gender = ''
+    phone = ''
+    passwordConfirm = ''
 }

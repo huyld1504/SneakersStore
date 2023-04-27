@@ -25,7 +25,7 @@ body {
 }
 .register_header .container .menu .shop {
   color: rgb(201, 201, 201);
-  font-size: 40px;
+  font-size: 30px;
 }
 .register_header .container .menu a {
   position: relative;
@@ -84,14 +84,18 @@ body {
 .register_form {
   background-color: white;
 }
-.register_form .container .frm_register {
-  background-color: rgb(201, 201, 201);
+.register_form h1 {
+  font-size: 50px;
 }
-.register_form .container .frm_register .row .col-6 .mb-4 input {
+.register_form .container .frm_register {
+  background-color: white;
+  border: none;
+}
+.register_form .container .frm_register .register__form .form__input .component__input input {
   font-size: 30px;
   color: black;
 }
-.register_form .container .frm_register .row .col-6 .mb-4 .text_effect {
+.register_form .container .frm_register .register__form .form__input .component__input .text_effect {
   position: relative;
   font-family: sans-serif;
   text-transform: uppercase;
@@ -106,7 +110,7 @@ body {
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   animation: text_effect linear infinite 10s;
 }
-.register_form .container .frm_register .row .col-6 .mb-4 .gender:hover {
+.register_form .container .frm_register .register__form .form__input .component__input .gender:hover {
   color: rgb(225, 47, 225);
   transition: all 1s;
 }
@@ -160,4 +164,13 @@ body {
   100% {
     background-position: 500%;
   }
+}
+.register_footer .container .footer_register_info .footer_register_title {
+  font-size: 30px;
+}
+.register_footer .container .footer_register_info p {
+  font-size: 20px;
+}
+.register_footer .container .footer_register_info .register_more_info {
+  font-size: 20px;
 }
