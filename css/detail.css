@@ -1,0 +1,55 @@
+.detail_product h1 {
+  font-size: 50px;
+}
+.detail_product .list__product .detail__product_list .detail_product_card .row .coolBeans {
+  border: 2px solid red;
+  border-radius: 30px;
+  width: 200px;
+  height: 60px;
+  color: red;
+  font-family: roboto;
+  font-size: 30px;
+  font-weight: 400;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+  background-color: white;
+}
+.detail_product .list__product .detail__product_list .detail_product_card .row .coolBeans::after {
+  background-color: rgb(225, 47, 225);
+  border-radius: 0.5rem;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.3s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+.detail_product .list__product .detail__product_list .detail_product_card .row .coolBeans:hover::after {
+  transform: translate(0, 0);
+}
+.detail_product .list__product .detail__product_list .detail_product_card .row .coolBeans:hover {
+  border: 2px solid transparent;
+  color: whitesmoke;
+  transform: scale(1);
+  will-change: transform;
+}
+
+.detail_footer .container .footer_detail_info .footer_detail_title {
+  font-size: 30px;
+}
+.detail_footer .container .footer_detail_info p {
+  font-size: 20px;
+}
+.detail_footer .container .footer_detail_info .detail_more_info {
+  font-size: 20px;
+}

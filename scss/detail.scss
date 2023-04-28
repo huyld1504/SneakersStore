@@ -1,0 +1,122 @@
+//Background:
+$bg-0: black;
+$bg-1: white;
+$bg-3: rgb(201, 201, 201);
+$bg-4: rgb(225, 47, 225);
+$bg-5: red;
+
+//Color:
+$txt-1: black;
+$txt-2: rgb(201,201,201);
+$txt-3: red;
+$txt-4: rgb(13, 225, 20);
+$txt-5: whitesmoke;
+$txt-6: rgb(225,47,225);
+
+//Font size:
+$fs-1: 10px;
+$fs-2: 20px;
+$fs-3: 30px;
+$fs-4: 40px;
+$fs-5: 50px;
+$fs-6: 60px;
+$fs-7: 70px;
+
+//Font weight:
+$fw-1: 100;
+$fw-2: 200;
+$fw-3: 300;
+$fw-4: 400;
+$fw-5: 500;
+$fw-6: 600;
+$fw-7: 700;
+
+//Product list 
+.detail_product{
+    h1{
+        font-size: $fs-5;
+    }
+    .list__product{
+        .detail__product_list{
+            .detail_product_card{
+                img{
+
+                }
+                .card-body{
+                    .detail_product_name{
+
+                    }
+                    .detail_product_description{
+
+                    }
+                }
+                .row{
+                    .detail_product_price{
+
+                    }
+                    .coolBeans{
+                        border :2px solid $bg-5;
+                        border-radius :30px;
+                        width: 200px;
+                        height: 60px;
+                        color:$bg-5;
+                        font-family :roboto;
+                        font-size :$fs-3;
+                        font-weight :$fw-4;
+                        overflow :hidden;
+                        position :relative;
+                        text-decoration :none;
+                        transition :.2s transform ease-in-out;
+                        will-change :transform;
+                        z-index :0;
+                        background-color: $bg-1;
+                        &::after{
+                            background-color :$bg-4;
+                            border-radius :0.5rem;
+                            content: '';
+                            display :block;
+                            height :100%;
+                            width :100%;
+                            position :absolute;
+                            left :0;
+                            top :0;
+                            transform :translate(-100%, 0) rotate(10deg);
+                            transform-origin :top left;
+                            transition :.3s transform ease-out;
+                            will-change : transform;
+                            z-index :-1;
+                        }
+                        &:hover::after{
+                                transform :translate(0, 0);
+                        }
+                        &:hover{
+                            border :2px solid transparent;
+                            color :$txt-5;
+                            transform :scale(1);
+                            will-change :transform;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+//Footer 
+.detail_footer{
+    .container{
+        .footer_detail_info{
+            .footer_detail_title{
+                font-size: $fs-3;
+            }
+            p{
+                font-size: $fs-2;
+            }
+            .detail_more_info{
+                font-size: $fs-2;
+            }
+        }
+    }
+  }
