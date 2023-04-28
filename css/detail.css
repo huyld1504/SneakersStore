@@ -1,3 +1,6 @@
+.detail_product h1 {
+  font-size: 50px;
+}
 .detail_product .list__product .detail__product_list .detail_product_card .row .coolBeans {
   border: 2px solid red;
   border-radius: 30px;
