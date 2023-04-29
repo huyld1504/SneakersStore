@@ -16,16 +16,9 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.register_header .container .logo {
-  color: rgb(225, 47, 225);
-  font-size: 50px;
-  display: inline-block;
-  text-decoration: none;
-  font-family: "Tilt Prism";
-}
 .register_header .container .menu .shop {
   color: rgb(201, 201, 201);
-  font-size: 30px;
+  font-size: 20px;
 }
 .register_header .container .menu a {
   position: relative;
@@ -102,7 +95,7 @@ body {
   font-size: 30px;
   letter-spacing: 4px;
   overflow: hidden;
-  background: linear-gradient(60deg, rgb(225, 47, 225), white, red);
+  background: linear-gradient(60deg, black, white, black);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 3s linear infinite;
