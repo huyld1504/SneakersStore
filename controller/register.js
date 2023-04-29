@@ -2,6 +2,7 @@
 import { CustomerInfo } from '../models/register_OOP.js'
 //import { check_space } from '../controller/method.js'
 import { validate } from './method.js'
+import { telephoneCheck } from './method.js'
 let array_Info = []
 
 document.querySelector('.frm_register').onsubmit = (event) => {
@@ -9,7 +10,7 @@ document.querySelector('.frm_register').onsubmit = (event) => {
 
     //Create new class from class OOP 'CustomerInformation()' from file 'register_OOP.js'
     let customer = new CustomerInfo()
-    customer.name = document.querySelector('#name').value 
+    customer.name = document.querySelector('#name').value
     customer.email = document.querySelector('#email').value
     customer.password = document.querySelector('#password').value
     customer.phone = document.querySelector('#phone').value
@@ -17,16 +18,16 @@ document.querySelector('.frm_register').onsubmit = (event) => {
     customer.gender = document.querySelector('.gender_male').checked
 
     console.log(customer) //Pick value input from user by Form Register
-    array_Info.push(customer)  
+    array_Info.push(customer)
     console.log('array_Info', array_Info) //Push object into array to manage
 
-    //Check again password is true
-    if (validate()) {
-        return
-    } else {
+    //Check validation from users
+    var validation = true
+    validation = telephoneCheck(customer.phone) & validate()
+    if (!validation === true) {
         document.querySelector('.check__password').innerHTML = 'Mật khẩu không khớp !!!'
-    }
-
+    } else {
+        //Request API
     let promise = axios.post("https://shop.cyberlearn.vn/api/Users/signup", {
         "email": customer.email,
         "password": customer.password,
@@ -36,16 +37,24 @@ document.querySelector('.frm_register').onsubmit = (event) => {
     })
     promise.then(function (result) {
         console.log('result', result.data.content)
+        alert('Chúc mừng bạn đã đăng kí thành công')
+        document.querySelector('.frm_register').reset()
     })
     promise.catch(function (err) {
         console.log(err)
+        alert('Tài khoản đăng kí của bạn đã không đúng, vui lòng đăng kí lại')
     })
-    //Check validation from users
-    // var validation = true
+    }
+
+    
+    
+    
+
+
     // validation = check_space(customer.passwordConfirm,'confirmPassword') & check_space(customer.email, 'email') & check_space(customer.password, 'password') & check_space(customer.name, 'name') & check_space(customer.phone, 'phone') & check_space(customer.gender, 'gender')
     // if (!validation) {
     //     return
     // }
-    //document.querySelector('.frm_register').reset()
+
 }
 
