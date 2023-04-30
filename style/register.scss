@@ -54,14 +54,11 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // .logo{
-        //     color: $txt-6;
-        //     font-size: $fs-5;
-        //     //margin-left: -300px;
-        //     display: inline-block;
-        //     text-decoration: none;
-        //     font-family: 'Tilt Prism';
-        // }
+        height: 100px;
+        .logo{
+            width: 120px;
+            height: 33px;
+        }
         .menu{
             //margin-left: 200px;
             .shop{

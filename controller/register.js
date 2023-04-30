@@ -1,6 +1,6 @@
 //Import utilities from others file
 import { CustomerInfo } from '../models/register_OOP.js'
-//import { check_space } from '../controller/method.js'
+//import { hasWhiteSpace } from '../controller/method.js'
 import { validate } from './method.js'
 import { telephoneCheck } from './method.js'
 let array_Info = []
@@ -21,9 +21,13 @@ document.querySelector('.frm_register').onsubmit = (event) => {
     array_Info.push(customer)
     console.log('array_Info', array_Info) //Push object into array to manage
 
+    if (customer.name !== "") {
+        document.querySelector('.check__name').innerHTML = 'Vui lòng nhập lại họ và tên !!!'
+    }
+
     //Check validation from users
     var validation = true
-    validation = telephoneCheck(customer.phone) & validate()
+    validation = telephoneCheck(customer.phone) & validate() 
     if (!validation === true) {
         document.querySelector('.check__password').innerHTML = 'Mật khẩu không khớp !!!'
     } else {
