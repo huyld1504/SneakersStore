@@ -29,7 +29,18 @@ export let validate = () => {
     if (x === y) {
         return true
     } else {
+        document.querySelector('.check__password').innerHTML = 'Mật khẩu không khớp !!!'
         return false
+    }
+}
+
+export let checkEmptyString = () => {
+    //Check empty name
+    if (customer.name !== "" || customer.name === '') {
+        //document.querySelector('.check__name').innerHTML = 'Vui lòng nhập lại họ và tên !!!'
+        return false
+    } else {
+        return true
     }
 }
 
